@@ -9,3 +9,6 @@ const getmonth = (callback) => {
         }
     }, 4000)   
 }
+getmonth((x, y) => {
+  console.log(y);  
+});

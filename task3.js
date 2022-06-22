@@ -1,21 +1,21 @@
-// let go = false;
-// const doing = new Promise((resolve, reject) => {
-//     if(go) {
-//         setTimeout(()=>{
-//             resolve('go vacation!')
-//         }, 2000)
-//     }else{
-//         setTimeout(()=>{
-//             reject('not going anywhere..')
-//         }, 2000)
-//     }
-// })
-// doing
-// .then((param1)=>console.log(param1))
-// .catch((param1)=> console.log(param1))
+let go = false;
+const doing = new Promise((resolve, reject) => {
+    if(go) {
+        setTimeout(()=>{
+            resolve('go vacation!')
+        }, 2000)
+    }else{
+        setTimeout(()=>{
+            reject('not going anywhere..')
+        }, 2000)
+    }
+})
+doing
+.then((param1)=>console.log(param1))
+.catch((param1)=> console.log(param1))
 
 
-let sugar = true
+let sugar = false;
 function coffe() {
     return new Promise((resolve, reject) => {
         if(sugar) {
