@@ -12,7 +12,7 @@ const doing = new Promise((resolve, reject) => {
 })
 doing
 .then((param1)=>console.log(param1))
-.catch((param1)=> console.log(param1))
+.catch((err)=> console.log(err))
 
 
 let sugar = false;
